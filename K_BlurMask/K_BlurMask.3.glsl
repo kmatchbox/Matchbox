@@ -5,27 +5,25 @@
 // Pass #3: Vertical blur
 //
 
-uniform sampler2D adsk_results_pass2, front;
-uniform float adsk_result_w, adsk_result_h;
-uniform float sigma;
-uniform float v_bias;
+uniform sampler2D adsk_results_pass2;
+uniform float adsk_result_w, adsk_result_h, sigma, v_bias;
 const float pi = 3.141592653589793238462643383279502884197969;
 
 void main() {
 	vec2 xy = gl_FragCoord.xy;
 	vec2 px = vec2(1.0) / vec2(adsk_result_w, adsk_result_h);
 
-	sigma += sigma * v_bias;
+	float v_sigma = sigma * v_bias;
 	
-	int support = int(sigma * 3.0);
+	int support = int(v_sigma * 3.0);
 
 	// Incremental coefficient calculation setup as per GPU Gems 3
 	vec3 g;
-	g.x = 1.0 / (sqrt(2.0 * pi) * sigma);
-	g.y = exp(-0.5 / (sigma * sigma));
+	g.x = 1.0 / (sqrt(2.0 * pi) * v_sigma);
+	g.y = exp(-0.5 / (v_sigma * v_sigma));
 	g.z = g.y * g.y;
 
-	if(sigma == 0.0) {
+	if(v_sigma == 0.0) {
 		g.x = 1.0;
 	}
 
