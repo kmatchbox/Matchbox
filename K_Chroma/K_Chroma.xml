@@ -1,7 +1,7 @@
 <ShaderNodePreset SupportsAdaptiveDegradation="0" Description="K_Chroma v1.0
 	Warps chroma channels.
 	
-	Shader written by:   Kyle Obley (kyle.obley@gmail.com) & Ivar Beer (ivar@inferno-op.com)
+	Shader written by:   Kyle Obley (kyle.obley@gmail.com) and Ivar Beer (ivar@inferno-op.com)
 	
 	Shader adapted from: https://www.shadertoy.com/view/XssGz" Name="K_Chroma">
    <Shader OutputBitDepth="Output" Index="1">
