@@ -1,4 +1,8 @@
-<ShaderNodePreset SupportsAdaptiveDegradation="0" Description="Blurs a region based on the matte input." Name="K_BlurMask">
+<ShaderNodePreset SupportsAdaptiveDegradation="0" Description="K_BlurMask 1.0
+	
+	Blurs an isolated region based on the matte input.
+	
+	Shader written by:   Kyle Obley (kyle.obley@gmail.com)" Name="K_BlurMask">
    <Shader OutputBitDepth="Output" Index="1">
       <Uniform Index="0" NoInput="Error" Tooltip="" DisplayName="Front" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="front">
       </Uniform>
