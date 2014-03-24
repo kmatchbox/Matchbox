@@ -1,5 +1,5 @@
 //
-// K_BlurMask v1.0
+// K_BlurMask v1.1
 // Shader written by:   Kyle Obley (kyle.obley@gmail.com)
 //
 // Pass #2: Horizontal blur
