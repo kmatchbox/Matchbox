@@ -1,16 +1,13 @@
 //
-// K_Chroma v1.0
+// K_Chroma v1.1
 // Shader written by:   Kyle Obley (kyle.obley@gmail.com) & Ivar Beer
 // Shader adapted from: https://www.shadertoy.com/view/XssGz8
 //
 
 uniform sampler2D image;
-uniform float adsk_image_w, adsk_image_h;
-uniform float adsk_result_w, adsk_result_h;
-uniform float chromatic_abb;
+uniform float adsk_image_w, adsk_image_h, adsk_result_w, adsk_result_h, chromatic_abb, d_amount;
 uniform int num_iter;
 uniform bool add_distortion;
-uniform float d_amount;
 uniform vec2 center;
 
 vec2 iResolution = vec2(adsk_result_w, adsk_result_h);
@@ -24,8 +21,6 @@ vec2 barrelDistortion(vec2 coord, float amt) {
 		return coord + cc * distortion * -1. * amt;
 	else
 		return coord + cc * amt * -.05;
-//	return coord + cc * amt;
-//	return coord + cc * distortion * amt;
 }
 
 float sat( float t )
