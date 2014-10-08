@@ -1,5 +1,5 @@
 //
-// K_RgbcmyMatte v1.0
+// K_RgbcmyMatte v1.1
 // Shader written by:   Kyle Obley (kyle.obley@gmail.com)
 //
 
@@ -15,13 +15,13 @@ void main()
 	
 	vec3 cmy;
 	
-	cmy.x = texture2D(image, st).rrr;
-	cmy.y = texture2D(image, st).ggg;
-	cmy.z = texture2D(image, st).bbb;
+	cmy.x = texture2D(image, st).r;
+	cmy.y = texture2D(image, st).g;
+	cmy.z = texture2D(image, st).b;
 	
-	cmy.x = vec3 (1.0, 1.0, 1.0) - (1.0 - cmy.x); // Red
-	cmy.y = vec3 (1.0, 1.0, 1.0) - (1.0 - cmy.y); // Green
-	cmy.z = vec3 (1.0, 1.0, 1.0) - (1.0 - cmy.z); // Blue
+	cmy.x = vec3 (0.0, 0.0, 0.0) + (cmy.x); // Red
+	cmy.y = vec3 (0.0, 0.0, 0.0) + (cmy.y); // Green
+	cmy.z = vec3 (0.0, 0.0, 0.0) + (cmy.z); // Blue
 	
 	// Red
 	if ( selection == 1 )
