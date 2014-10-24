@@ -22,7 +22,7 @@
       </Uniform>
       <Uniform ResDependent="None" Max="1000000.0" Min="0.0" Default="0.0" Inc="0.01" Tooltip="" Row="0" Col="0" Page="0" DisplayName="Blur Amount" Type="float" Name="sigma">
       </Uniform>
-      <Uniform ResDependent="None" Max="1000000.0" Min="1.0" Default="1.0" Inc="0.01" Tooltip="" Row="0" Col="1" Page="0" DisplayName="Horizontal Bias" Type="float" Name="h_bias">
+      <Uniform ResDependent="None" Max="1000000.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="0" Col="1" Page="0" DisplayName="Horizontal Bias" Type="float" Name="h_bias">
       </Uniform>
    </Shader>
    <Shader OutputBitDepth="Output" Index="5">
@@ -32,7 +32,7 @@
          <Duplicate>
          </Duplicate>
       </Uniform>
-      <Uniform ResDependent="None" Max="1000000.0" Min="1.0" Default="1.0" Inc="0.01" Tooltip="" Row="1" Col="1" Page="0" DisplayName="Vertical Bias" Type="float" Name="v_bias">
+      <Uniform ResDependent="None" Max="1000000.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="1" Col="1" Page="0" DisplayName="Vertical Bias" Type="float" Name="v_bias">
       </Uniform>
    </Shader>
    <Shader OutputBitDepth="Output" Index="6">
