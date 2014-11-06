@@ -1,5 +1,5 @@
 <ShaderNodePreset SupportsAdaptiveDegradation="0" Description="
-Creates a B&W image based on the dominance of R-G-B channels.
+Creates a black and white image based on the dominance of R-G-B channels.
 
 Common values to mimic specific filters:		
 Yellow: 60 28 12
